@@ -18,10 +18,4 @@ public class BugspringbatchApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BugspringbatchApplication.class, args);
 	}
-
-	@Bean
-	@JobScope
-	public ItemReader<String> itemReader() {
-		return () -> "";
-	}
 }
